@@ -1,0 +1,77 @@
+.container{
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+.container > h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.searchBar{
+    padding-right: 5px;
+    border-radius: 25px;
+    height: 30px;
+    display: flex;
+    box-shadow: 0px 0px 16px -3px rgba(34, 60, 80, 0.4);
+    align-items: center;
+    
+}
+.searchBar > svg{
+    height: 25px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+.searchBar > input {
+    padding-left: 5px;
+    font-size: 20px;
+    border-radius: 25px;
+    outline: none;
+    flex-grow: 2;
+    height: inherit;
+}
+.filters{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.filters > div > label{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-right: 5px;
+    
+}
+.filters > div > select{
+    box-shadow: 0px 0px 16px -3px rgba(34, 60, 80, 0.4);
+    border-radius: 25px;
+    outline: none;
+    font-size: 20px;
+}
+
+@media (max-width: 650px){
+    .filters{
+        gap: 2vw;
+    }
+    .filters > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
+}
+@media (max-width: 450px){
+    .container{
+        gap: 3vw;
+    }
+    .container > h1 {
+        font-size: 30px;
+    }
+    .searchBar{
+        height: 20px;
+    }
+    .searchBar > svg{
+        height: 15px;
+    }
+}

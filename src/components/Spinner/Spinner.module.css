@@ -1,0 +1,14 @@
+.spinner{
+    height: inherit;
+    width: inherit;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg);} 
+  }

@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0px 0px 16px 4px rgba(34, 60, 80, 0.53);
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: inherit;
+    color: inherit;
+}
+.container > img{
+    width: 300px;
+    height: 400px;
+}
+.container > div{
+    width: 300px;
+    gap: 7px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.container > div > p{
+    font-size: 25px;
+    font-weight: 700;
+}
+.categories{
+    color: gray;
+    text-decoration: underline;
+}
+.authors{
+    color: gray;
+}
+
+@media (max-width: 450px){
+    .container > img{
+        width: 240px;
+        height: 300px;
+    }
+    .container > div{
+       width: 240px; 
+    }
+}
